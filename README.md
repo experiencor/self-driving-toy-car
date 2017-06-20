@@ -3,7 +3,7 @@
 
 To make a lane follower based on a standard RC car using Raspberry Pi and a camera. The software is a simple Convolutional Network, which takes in the image fetched from the camera and outputs the steering angle.
 
-<a href="https://www.youtube.com/watch?v=-v6q2dNZTU8" rel="some text">![Foo](https://j.gifs.com/vgGgrM.gif)</a>
+<a href="https://www.youtube.com/watch?v=-v6q2dNZTU8" rel="some text">![Foo](http://imgur.com/a/HRgJ6)</a>
 
 # Design
 
