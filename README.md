@@ -3,17 +3,23 @@
 
 To make a lane follower based on a standard RC car using Raspberry Pi and a camera. The software is a simple Convolutional Network, which takes in the image fetched from the camera and outputs the steering angle.
 
+<p align="center">
 <a href="https://www.youtube.com/watch?v=-v6q2dNZTU8" rel="some text">![Foo](https://j.gifs.com/qjzYzp.gif)</a>
+</p>
 
 # Design
 
-<img width="500" src="images/hardware.jpg"/>
+<p align="center">
+<img width="400" src="images/hardware.jpg"/>
+</p>
 
 ## Hardware
 
 The receiver of a standard RC car receives throttle and steering signals from the transmitter. The signals are converted to PWM pulses by the receiver to directly control the speed of the motor and the steering angle of the servo. The following figure pictures the wiring of a standard RC car:
 
-<img width="500" src="images/rc_car.png"/>
+<p align="center">
+<img width="400" src="images/rc_car.png"/>
+</p>
 
 During data collection, we will simply hook the steering PWM of the car to pin GPIO17. The script **raspberry_pi/collect_data.py** will record the values of steering PWM and the associated images. The data of each trial are collectively stored in driving\_trial_*. The trial folders are automatically numbered.
 
@@ -21,7 +27,9 @@ During data collection, we will simply hook the steering PWM of the car to pin G
 
 In autonomous mode, the servo of the car is connected to pin GPIO18 of Raspberry Pi instead of the receiver. The Raspberry Pi will use the camera to capture the image and use the trained neural network to predict the steering angle. The steering angle is then translated to PWM signal to control the servo. This whole processing pipeline is implemented in the script **raspberry_pi/drive_me.py**.
 
-<img width="500" src="images/design.png"/>
+<p align="center">
+<img width="400" src="images/design.png"/>
+</p>
 
 # About
 
