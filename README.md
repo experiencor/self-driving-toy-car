@@ -29,7 +29,7 @@ In autonomous mode, the servo of the car is connected to pin GPIO18 of Raspberry
 <img width="400" src="images/design.png"/>
 </p>
 
-# About
+# Code structure
 
 * rasp_pi/ - scripts to run on the Raspberry Pi to collect data as well as to automatically control the car.
     * collect_data.py - the script to capture camera image and record steering PWM signal (need to run "sudo pigpiod" first).
